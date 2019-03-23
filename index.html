@@ -11,10 +11,29 @@ background-color: white;
 font-family: "Arial";
 }
 
+h1{
+  margin: 10px;
+}
+
 h2 {
   font-size: 2em;
   text-align: center;
   text-decoration: underline;
+  margin-top: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td {
+  border: 5px solid #F694C1;
+}
+
+table.a {
+  table-layout: fixed;
+  width: 100%;
 }
 
 .content {
@@ -75,10 +94,17 @@ h2 {
   clear: both;
 }
 
+.column.skills{
+  background-color: #EDE7B1;
+  width: auto;
+  margin-top: 5px;
+  padding: 10px 10px 10px 10px;
+}
+
 
 @media screen and (max-width: 850px) {
-  .column.side, .column.middle {
-    float: none;
+  .column.side, .column.middle, .column.skills {
+    float:none;
     width: auto;
     padding: 5px 5px 5px 5px;
   }
@@ -87,6 +113,9 @@ h2 {
   font-size: 1.5em;
 }
 
+p{
+  font-size: 0.8em;
+}
 
   h1{
     font-size: 2em;
@@ -98,6 +127,10 @@ h2 {
 
   .topnav {
     font-size: 1em;
+  }
+
+  td{
+    font-size: 0.8em;
   }
 
 }
@@ -125,7 +158,8 @@ h2 {
   <div class="column side">
     <h2>Introduction</h2>
 <p>Final year student from Nanyang Technological University majoring in Chemical and
-Biomolecular Engineering. Currently, I'm seeking an employment opportunity in a job
+Biomolecular Engineering.</p>
+<p>Currently, I'm seeking an employment opportunity in a job
 related to process engineering or safety engineering.</p>
   </div>
 
@@ -139,6 +173,32 @@ related to process engineering or safety engineering.</p>
 <p>Work in Progress</p>
   </div>
 </div>
+
+</div>
+
+<div class="content">
+  <div class="row">
+    <div class="column skills">
+      <h2>Skills</h2>
+
+<table class="a">
+<tr>
+    <td><img src="pictures/hysys.jpg" width=100%>Aspen HYSYS</td>
+    <td><img src="pictures/design2.png" width=100%>Design II</td>
+    <td><img src="pictures/matlab.png" width=100%>MATLAB</td>
+</tr>
+<tr>
+  <td>Visual Basic for Applications (VBA)</td>
+  <td>Robotics</td>
+  <td>Microsoft Office</td>
+</tr>
+
+</table>
+
+      </div>
+    </div>
+
+  </div>
 
 </div>
 </body>
